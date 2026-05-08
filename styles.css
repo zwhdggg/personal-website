@@ -358,12 +358,6 @@ h3 {
   line-height: 1.9;
 }
 
-.resume-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.7fr);
-  gap: 22px;
-}
-
 .panel,
 .project-card {
   border: 1px solid var(--line);
@@ -406,6 +400,31 @@ h3 {
 }
 
 .skill-list,
+.project-tags {
+  margin-bottom: 18px;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 15px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 900;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.project-link:hover {
+  background: var(--teal);
+  transform: translateY(-1px);
+}
+
 .project-tags {
   display: flex;
   flex-wrap: wrap;
@@ -560,7 +579,6 @@ h3 {
   .hero,
   .section-heading.split,
   .about-grid,
-  .resume-layout,
   .project-grid,
   .contact-section {
     grid-template-columns: 1fr;
